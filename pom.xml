@@ -3,4 +3,13 @@
   <groupId>AlgorithmDesign</groupId>
   <artifactId>AlgorithmDesign</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+ 
+  <dependencies>
+  	<dependency>
+  		<groupId>edu.berkeley.nlp</groupId>
+  		<artifactId>berkeleylm</artifactId>
+  		<version>1.1.2</version>
+  	</dependency>
+  </dependencies>
 </project>
