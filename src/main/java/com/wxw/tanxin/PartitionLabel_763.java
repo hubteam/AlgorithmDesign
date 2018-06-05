@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ÌâÒâÊÇÒª¶ÔÒ»¸ö×Ö·û´®½øÐÐ¾¡¿ÉÄÜ¶àµÄ»®·Ö£¬²¢±£Ö¤Ã¿¸ö»®·ÖÖÐµÄÔªËØ²»ÔÚÆäËû»®·ÖÖÐ³öÏÖ¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½Ü¶ï¿½Ä»ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½Ö¡ï¿½
  * Input: S = "ababcbacadefegdehijhklij"
  * Output: [9,7,8]
  * Explanation:
@@ -16,11 +16,11 @@ public class PartitionLabel_763 {
 
 	public static List<Integer> partitionLabels(String s){
 		int[] lastIndexs = new int[26];
-		//¼ÇÂ¼×Ö·û´®ÖÐÃ¿Ò»¸ö×ÖÄ¸ÔÚ×Ö·û´®ÖÐ³öÏÖµÄ×îºóµÄÎ»ÖÃ
+		//ï¿½ï¿½Â¼ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 		for (int i = 0; i < s.length(); i++) {
 			lastIndexs[s.charAt(i) - 'a'] = i;
 		}
-	    List<Integer> ret = new ArrayList<>();
+	    List<Integer> ret = new ArrayList<Integer>();
 	    int firstIndex = 0;
 	    while (firstIndex < s.length()) {
 	        int lastIndex = firstIndex;

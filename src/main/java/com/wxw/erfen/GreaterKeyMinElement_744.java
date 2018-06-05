@@ -6,11 +6,11 @@ package com.wxw.erfen;
  */
 public class GreaterKeyMinElement_744 {
 
-    public static int minElement(int[] nums, int key){
+    public static char minElement(char[] nums, char key){
 
-        int l = 1, h = nums.length;
+        int l = 0, h = nums.length - 1;
         while (l <= h){
-            int m = (l + (h - 1)) / 2;
+            int m = l + (h - l) / 2;
             if (nums[m] <= key){
                 l = m + 1;
             } else {
@@ -18,5 +18,11 @@ public class GreaterKeyMinElement_744 {
             }
         }
         return l < nums.length ? nums[l] : nums[0];
+    }
+
+    public static void main(String[] args) {
+        char[] c = {'c', 'f', 'j'};
+        System.out.println(minElement(c, 'd'));
+        System.out.println(minElement(c, 'k'));
     }
 }

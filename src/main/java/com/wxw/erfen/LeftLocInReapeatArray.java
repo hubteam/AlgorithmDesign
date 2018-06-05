@@ -8,7 +8,7 @@ package com.wxw.erfen;
 public class LeftLocInReapeatArray {
 
     public static int leftLocation(int[] nums, int key){
-        int l = 1, h = nums.length;
+        int l = 0, h = nums.length-1;
         while (l < h){
             int m = (l + (h - 1)) / 2;
             if (key > nums[m]){

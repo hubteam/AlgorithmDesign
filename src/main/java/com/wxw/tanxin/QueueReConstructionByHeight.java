@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Ò»¸öÑ§ÉúÓÃÁ½¸ö·ÖÁ¿ (h, k) ÃèÊö£¬h ±íÊ¾Éí¸ß£¬k ±íÊ¾ÅÅÔÚÇ°ÃæµÄÓÐ k ¸öÑ§ÉúµÄÉí¸ß±ÈËû¸ß»òÕßºÍËûÒ»Ñù¸ß¡£
+ * Ò»ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (h, k) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½h ï¿½ï¿½Ê¾ï¿½ï¿½ß£ï¿½k ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ k ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ï¿½ï¿½ß»ï¿½ï¿½ßºï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ß¡ï¿½
  * @author 10187
  *
  */
@@ -15,9 +15,9 @@ public class QueueReConstructionByHeight {
 		if (people == null || people.length == 0 || people[0].length == 0) {
 			return new int[0][0];
 		}
-		Arrays.sort(people, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]));
+//		Arrays.sort(people, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]));
 
-	    List<int[]> queue = new ArrayList<>();
+	    List<int[]> queue = new ArrayList<int[]>();
 
 	    for (int[] p : people)
 	        queue.add(p[1], p);
@@ -28,7 +28,7 @@ public class QueueReConstructionByHeight {
 	public static void main(String[] args) {
 		int[][] p = {{7,0},{4,4},{7,1},{5,0},{6,1},{5,2}};
 		reconstructQueue(p);
-		List<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<String>();
 		list.add(0, "a");
 		list.add(1, "c");
 		list.add(1, "b");
